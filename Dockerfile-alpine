@@ -11,7 +11,7 @@
 # ssh credentials (test user):
 #   root@root
 
-FROM alpine:3.7
+FROM alpine:3.19.4
 
 RUN apk add --update openssh gcc g++ clang gdb cmake make ninja autoconf automake dos2unix tar rsync python3 \
   && rm  -rf /tmp/* /var/cache/apk/*
